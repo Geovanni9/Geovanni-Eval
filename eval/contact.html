@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styl.css">                   <!--permet relier le fichier css au html-->
+    <title>Bienvenue</title>
+</head>
+    <header class="myheader">
+        <nav>                                                       <!--permet de créer la barre de navigation-->
+            <h1 id="logo"> STAMP</h1>
+            <ul>                                                    <!-- permet de créer une liste non ordonnée-->
+                <li> <a href="acceuil.html"> Acceuil </a></li>      <!--élément de la liste ul-->
+                <li> <a href="contact.html"> Contact </a></li>
+                <li> <a href="presentation.html"> Produits </a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <form action="confirmation.html">                            <!-- permet la création d'un formulaire-->
+            <fieldset>                                               <!--permet d'encadrer le formulaire-->
+                <legend>Nous contacter</legend><br>                   <!-- permet de nommer le fieldset-->
+                <div>
+                    <label for="name"> Name :</label>       <!--l'attribut for et id vont ensemble, grâce à cela, lorsque je clique sur le Label, ça sélectionne automatiquement la case correspondante-->
+                    <input type="text" name="nom" id="name" required>
+                </div><br>
+                <div>
+                    <label for="fname"> First name :</label>
+                    <input type="text" name="fname" id="fname" required> <!--Required permet de remplir les champs obligatoires avant l'envoi du formulaire-->
+                </div><br>
+                <div>
+                    <label for="bday"> Birthday :</label>
+                    <input type="date" name="bday" id="bday">
+                </div><br>
+                <div>
+                    <label> Gender :</label>
+                    <label for="man">Man</label>
+                    <input type="radio" name="gender" id="man">         <!-- le radio permet de choisir un élément à la fois-->
+                    <label for="woman"> Woman </label>
+                    <input type="radio" name="gender" id="woman">
+                    <label for="other"> Other </label>
+                    <input type="radio" name="gender" id="other">
+                </div><br>
+                <div>
+                    <label for="email"> Email :</label>
+                    <input type="email" name="email" id="email" placeholder="contact@mail.com" required> <!--le Placeholder permet d'indiquer en fond ce qu'il faut faire-->
+                </div><br>
+                <div>
+                    <label for="tel"> Phone :</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div><br>
+                <div>
+                    <label for="message"> Message :</label> <br>
+                    <textarea name="message" id="message" cols="100" rows="10" placeholder="Entrez votre message ici"></textarea>
+                </div><br>
+                <div>
+                    <input type="submit" name="submit" id="submit" class="envoi" value="Send"> <!--le Submit permet l'envoi du formulaire-->
+                    <input type="reset" name="reset" id="reset" value="Reset">    <!-- le Reset permet d'annuler ou réinitialiser le formulaire-->  
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    
+    <br>
+    <footer class="myfooter">                                                       <!--permet de créer le pied-de page-->
+        <div> Quick Link </div>
+        <br>
+        <div>
+            <ul>
+                <ul>
+                    <li> <a href="acceuil.html"> Acceuil </a></li>
+                    <li> <a href="contact.html"> Contact </a></li>
+                    <li> <a href="presentation.html"> Produits </a></li>
+                </ul>
+            </ul>
+        </div>
+       <p><span id="end">© 2020 STAMP </span></p>
+       
+    </footer>
+<body>
+    
+</body>
+</html>
